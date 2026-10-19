@@ -1,28 +1,36 @@
-﻿# Python
+﻿
+# Python
 __pycache__/
 *.py[cod]
 *.pyd
 
-# Virtual environment
+# Virtual environments
 .venv/
 venv/
 env/
 
-# Datasets
+# Raw and processed datasets
 data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
-# Model weights and checkpoints
+# Model checkpoints (keep locally; distribute separately)
 *.pt
 *.pth
 *.onnx
 *.h5
 *.keras
-outputs/checkpoints/*
-outputs/reports/*
-outputs/figures/*
+
+# Temporary package archives and split chunks
+blood_cell_colab_package.zip
+blood_cell_part_*.bin
+*.zip
+*.bin
+
+# Generated files that should not be versioned
+outputs/checkpoints/
+outputs/figures/
 
 # Secrets
 .env
@@ -34,3 +42,7 @@ outputs/figures/*
 # IDE
 .vscode/
 .idea/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,16 @@
+{
+  "total_images": 17092,
+  "total_classes": 8,
+  "class_counts": {
+    "basophil": 1218,
+    "eosinophil": 3117,
+    "erythroblast": 1551,
+    "ig": 2895,
+    "lymphocyte": 1214,
+    "monocyte": 1420,
+    "neutrophil": 3329,
+    "platelet": 2348
+  },
+  "readable_images": 17092,
+  "unreadable_images": 0
+}
