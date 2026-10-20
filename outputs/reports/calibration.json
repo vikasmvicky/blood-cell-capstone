@@ -1,0 +1,9 @@
+{
+  "temperature": 0.903,
+  "fit_split": "val",
+  "checkpoint_sha256": "d1f3c2b362351de79168a919e09182fb39fcfdb310bfdffa5052a7e1708b13c5",
+  "test_nll_before": 0.14537377965532886,
+  "test_nll_after": 0.14374997724314448,
+  "test_ece_before": 0.010612751914665233,
+  "test_ece_after": 0.010967179527278475
+}

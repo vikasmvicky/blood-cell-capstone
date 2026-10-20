@@ -1,0 +1,9 @@
+,predicted_basophil,predicted_eosinophil,predicted_erythroblast,predicted_ig,predicted_lymphocyte,predicted_monocyte,predicted_neutrophil,predicted_platelet
+actual_basophil,177,0,0,3,2,0,1,0
+actual_eosinophil,0,466,0,0,0,0,1,0
+actual_erythroblast,0,0,218,2,7,1,1,3
+actual_ig,31,0,2,362,6,9,24,0
+actual_lymphocyte,0,0,0,0,181,0,0,1
+actual_monocyte,2,0,0,19,4,187,1,0
+actual_neutrophil,0,1,2,16,0,0,480,0
+actual_platelet,0,0,0,1,0,0,0,351

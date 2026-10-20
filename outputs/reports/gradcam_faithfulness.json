@@ -1,0 +1,19 @@
+{
+  "split": "val",
+  "n_images": 200,
+  "mean_probability_drop": {
+    "10%": {
+      "gradcam": 0.6383825146814343,
+      "random": 0.4444308834336698
+    },
+    "20%": {
+      "gradcam": 0.7801794316235464,
+      "random": 0.6683707007113844
+    },
+    "40%": {
+      "gradcam": 0.8030529015744104,
+      "random": 0.779839225821197
+    }
+  },
+  "note": "Larger drop for gradcam than random supports (does not prove) that heat-maps highlight evidence the model uses."
+}
