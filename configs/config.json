@@ -1,0 +1,46 @@
+{
+  "_comment": "Single source of truth for inference/evaluation settings. Paths are relative to the project root.",
+  "model": {
+    "architecture": "mobilenet_v2",
+    "checkpoint_path": "outputs/models/best_mobilenet_finetuned.pt",
+    "num_classes": 8
+  },
+  "preprocessing": {
+    "image_size": [224, 224],
+    "resample": "bilinear",
+    "pixel_scale": 255.0,
+    "mean": [0.485, 0.456, 0.406],
+    "std": [0.229, 0.224, 0.225]
+  },
+  "classes": {
+    "class_to_idx_path": "outputs/reports/class_to_idx.json",
+    "display_names": {
+      "basophil": "Basophil",
+      "eosinophil": "Eosinophil",
+      "erythroblast": "Erythroblast",
+      "ig": "Immature granulocyte (IG)",
+      "lymphocyte": "Lymphocyte",
+      "monocyte": "Monocyte",
+      "neutrophil": "Neutrophil",
+      "platelet": "Platelet"
+    }
+  },
+  "inference": {
+    "device": "cpu",
+    "top_k": 8,
+    "low_confidence_threshold": 0.70,
+    "max_upload_mb": 10,
+    "min_image_side_px": 64,
+    "max_image_side_px": 8000,
+    "allowed_extensions": ["png", "jpg", "jpeg"]
+  },
+  "data": {
+    "data_root": "data/raw/PBC_dataset_normal_DIB",
+    "splits_csv": "outputs/reports/splits.csv",
+    "split_seed": 123,
+    "split_ratios": {"train": 0.70, "val": 0.15, "test": 0.15}
+  },
+  "reproducibility": {
+    "seed": 42
+  }
+}

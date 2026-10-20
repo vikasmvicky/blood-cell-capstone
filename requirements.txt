@@ -1,8 +1,13 @@
-﻿numpy
-pandas
-matplotlib
-seaborn
-scikit-learn
-Pillow
-jupyter
-streamlit
+# Runtime (website + inference + evaluation)
+numpy>=1.24
+pandas>=2.0
+Pillow>=10.0
+scipy>=1.10
+scikit-learn>=1.3
+scikit-image>=0.22
+matplotlib>=3.7
+torch>=2.2
+torchvision>=0.17
+streamlit>=1.40
+tqdm>=4.66
+# seaborn and jupyter were listed originally; the notebooks/plots in this repo no longer need them.

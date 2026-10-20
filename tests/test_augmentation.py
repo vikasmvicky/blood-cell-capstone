@@ -1,6 +1,7 @@
 
 from unittest.mock import patch
 
+import pytest
 from PIL import Image
 
 from src.data.image_dataset import BloodCellDataset
@@ -48,6 +49,18 @@ def main():
     print("Test augmentation disabled: PASS")
     print("Augmented image type: PASS")
     print("SUCCESS: All augmentation checks passed.")
+
+
+def test_augmentation_on_real_splits():
+    """Needs the real split manifest and PBC images (see ASSETS.md); skipped otherwise."""
+    from src.data.image_dataset import SPLIT_CSV
+
+    if not SPLIT_CSV.is_file():
+        pytest.skip(f"split manifest missing: {SPLIT_CSV}")
+    try:
+        main()
+    except FileNotFoundError as exc:
+        pytest.skip(f"dataset images missing: {exc}")
 
 
 if __name__ == "__main__":

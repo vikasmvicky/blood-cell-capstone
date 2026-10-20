@@ -3,7 +3,7 @@
 
 import random
 import json
-from pathlib import Path
+from pathlib import Path, PureWindowsPath
 
 import numpy as np
 import pandas as pd
@@ -16,14 +16,16 @@ PROJECT_ROOT = Path(__file__).resolve().parents[2]
 SPLIT_CSV = PROJECT_ROOT / "outputs" / "reports" / "splits.csv"
 CLASS_MAP_PATH = PROJECT_ROOT / "outputs" / "reports" / "class_to_idx.json"
 
+DATA_ROOT = PROJECT_ROOT / "data" / "raw" / "PBC_dataset_normal_DIB"
+
 IMAGE_SIZE = (224, 224)
 
 VALID_SPLITS = {"train", "val", "test"}
 
 
-def load_class_mapping():
+def load_class_mapping(class_map_path=CLASS_MAP_PATH):
     """Load the saved mapping from class names to integer labels."""
-    with CLASS_MAP_PATH.open("r", encoding="utf-8") as file:
+    with Path(class_map_path).open("r", encoding="utf-8") as file:
         class_to_idx = json.load(file)
 
     if not isinstance(class_to_idx, dict) or not class_to_idx:
@@ -34,6 +36,40 @@ def load_class_mapping():
     return class_to_idx
 
 
+def resolve_image_path(row, data_root=DATA_ROOT):
+    """Locate an image on this machine.
+
+    The split manifest stores the absolute path from the machine that built it
+    (e.g. ``D:\\blood-cell-capstone\\data\\raw\\...``). That path usually does
+    not exist elsewhere, so fall back to ``data_root / rel_path`` and then to
+    ``data_root / <class_name> / <filename>``.
+    """
+    data_root = Path(data_root)
+    candidates = []
+
+    recorded = row.get("path") if hasattr(row, "get") else None
+    if isinstance(recorded, str) and recorded:
+        candidates.append(Path(recorded))
+
+    rel_path = row.get("rel_path") if hasattr(row, "get") else None
+    if isinstance(rel_path, str) and rel_path:
+        candidates.append(data_root / Path(*PureWindowsPath(rel_path).parts))
+
+    if isinstance(recorded, str) and recorded:
+        filename = PureWindowsPath(recorded).name
+        candidates.append(data_root / str(row["class_name"]) / filename)
+
+    for candidate in candidates:
+        if candidate.is_file():
+            return candidate
+
+    tried = ", ".join(str(c) for c in candidates) or "<no path columns>"
+    raise FileNotFoundError(
+        f"Image not found. Tried: {tried}. Place the PBC dataset under "
+        f"'{data_root}' (see ASSETS.md)."
+    )
+
+
 class BloodCellDataset(Dataset):
     """Load blood-cell images one at a time instead of all into RAM."""
 
@@ -42,6 +78,8 @@ class BloodCellDataset(Dataset):
         split,
         csv_path=SPLIT_CSV,
         image_size=IMAGE_SIZE,
+        class_map_path=CLASS_MAP_PATH,
+        data_root=DATA_ROOT,
     ):
         if split not in VALID_SPLITS:
             raise ValueError(
@@ -51,7 +89,15 @@ class BloodCellDataset(Dataset):
 
         self.csv_path = Path(csv_path)
         self.image_size = tuple(image_size)
-        self.class_to_idx = load_class_mapping()
+        self.class_to_idx = load_class_mapping(class_map_path)
+        self.data_root = Path(data_root)
+
+        if not self.csv_path.is_file():
+            raise FileNotFoundError(
+                f"Split manifest not found: {self.csv_path}. Create it with "
+                f"'python -m src.data.inspect_dataset' and "
+                f"'python -m src.data.split_dataset --seed 123' (see ASSETS.md)."
+            )
 
         df = pd.read_csv(self.csv_path)
 
@@ -115,12 +161,7 @@ class BloodCellDataset(Dataset):
         """Return one image tensor and its integer class label."""
 
         row = self.df.iloc[index]
-        image_path = Path(row["path"])
-
-        if not image_path.is_file():
-            raise FileNotFoundError(
-                f"Image not found: {image_path}"
-            )
+        image_path = resolve_image_path(row, self.data_root)
 
         with Image.open(image_path) as image:
             image = image.convert("RGB")

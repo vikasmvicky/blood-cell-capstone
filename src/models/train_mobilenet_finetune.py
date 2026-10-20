@@ -189,7 +189,7 @@ def main():
         )
 
         print(
-            f"Epoch {epoch}/5 | "
+            f"Epoch {epoch}/{args.epochs} | "
             f"train acc {train_acc:.4f} | train F1 {train_f1:.4f} | "
             f"val acc {val_acc:.4f} | val macro F1 {val_f1:.4f} | "
             f"{row['epoch_seconds']:.1f}s"

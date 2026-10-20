@@ -1,0 +1,26 @@
+{
+  "split": "val",
+  "n_images": 200,
+  "baseline_accuracy": 0.965,
+  "cropped_accuracy": 0.5,
+  "accuracy_difference_crop_minus_baseline": -0.46499999999999997,
+  "fraction_crop_found": 1.0,
+  "fraction_multiple_objects": 0.835,
+  "multi_object_subset": {
+    "n": 167,
+    "baseline_accuracy": 0.9580838323353293,
+    "cropped_accuracy": 0.4491017964071856
+  },
+  "objects_per_image_by_class": {
+    "basophil": 7.308,
+    "eosinophil": 10.844,
+    "erythroblast": 12.722,
+    "ig": 13.656,
+    "lymphocyte": 11.917,
+    "monocyte": 7.652,
+    "neutrophil": 16.051,
+    "platelet": 22.0
+  },
+  "note": "Measured effect of inference-time cropping with the existing model; no retraining. Do not claim an improvement unless the difference is positive on the held-out test split with parameters chosen on val."
+}
+seg_rc=0

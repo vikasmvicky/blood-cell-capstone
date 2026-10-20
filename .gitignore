@@ -1,26 +1,31 @@
-﻿
 # Python
 __pycache__/
 *.py[cod]
 *.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
 # Virtual environments
 .venv/
 venv/
 env/
 
-# Raw and processed datasets
+# Raw and processed datasets (restore per ASSETS.md)
 data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
-# Model checkpoints (keep locally; distribute separately)
+# Model checkpoints (distribute separately; see ASSETS.md)
 *.pt
 *.pth
 *.onnx
 *.h5
 *.keras
+outputs/models/*
+!outputs/models/.gitkeep
+!outputs/models/README.md
 
 # Temporary package archives and split chunks
 blood_cell_colab_package.zip
@@ -28,21 +33,21 @@ blood_cell_part_*.bin
 *.zip
 *.bin
 
-# Generated files that should not be versioned
+# Large / regenerable outputs
 outputs/checkpoints/
 outputs/figures/
 
 # Secrets
 .env
 .env.*
+!.env.example
+.streamlit/secrets.toml
 
 # Jupyter
 .ipynb_checkpoints/
 
-# IDE
+# IDE / OS
 .vscode/
 .idea/
-
-# OS
 .DS_Store
 Thumbs.db

@@ -1,0 +1,19 @@
+Evaluating 2562 'test' images on CPU ...
+
+Accuracy        : 0.9454
+Macro precision : 0.9386
+Macro recall    : 0.9463
+Macro F1        : 0.9413
+NLL / ECE / Brier: 0.1454 / 0.0106 / 0.0782
+Temperature     : 0.903 (fitted on val; test ECE 0.0106 -> 0.0110)
+
+Top confusions:
+true_class predicted_class  count  rate_of_true_class
+        ig        basophil     31            0.071429
+        ig      neutrophil     24            0.055300
+  monocyte              ig     19            0.089202
+neutrophil              ig     16            0.032064
+        ig        monocyte      9            0.020737
+
+Reports written to D:\blood-cell-capstone\outputs\reports
+eval_rc=0

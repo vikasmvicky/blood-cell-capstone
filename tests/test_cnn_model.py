@@ -46,5 +46,9 @@ def main():
     print("SUCCESS: CNN smoke test passed.")
 
 
+def test_cnn_smoke():
+    main()
+
+
 if __name__ == "__main__":
     main()

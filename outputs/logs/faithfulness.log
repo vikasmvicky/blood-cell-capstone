@@ -1,0 +1,17 @@
+  10/60 images done
+  20/60 images done
+  30/60 images done
+  40/60 images done
+  50/60 images done
+  60/60 images done
+Plot written to D:\blood-cell-capstone\outputs\reports\gradcam_faithfulness_curves.png
+{
+  "gradcam_deletion_auc": 0.1904,
+  "random_deletion_auc": 0.2252,
+  "gradcam_insertion_auc": 0.6771,
+  "random_insertion_auc": 0.2266,
+  "deletion_more_faithful_than_random": true,
+  "insertion_more_faithful_than_random": true
+}
+Report written to D:\blood-cell-capstone\outputs\reports\gradcam_faithfulness.json
+faith_rc=0

@@ -1,0 +1,18 @@
+{
+  "temperature": 0.903,
+  "fit_split": "val",
+  "eval_split": "test",
+  "checkpoint": "best_mobilenet_finetuned.pt",
+  "checkpoint_sha256": "d1f3c2b362351de79168a919e09182fb39fcfdb310bfdffa5052a7e1708b13c5",
+  "evaluated_at": "2026-10-20T20:15:24",
+  "val_nll_at_fitted_temperature": 0.14094178737879298,
+  "fit_method": "grid search minimising validation NLL (deterministic)",
+  "test_nll_before": 0.14537377962653597,
+  "test_nll_after": 0.14374997722363833,
+  "test_ece_before": 0.01061275201669398,
+  "test_ece_after": 0.010967179635247846,
+  "test_brier_before": 0.0782257711750784,
+  "test_brier_after": 0.07864926189530787,
+  "test_accuracy_before": 0.9453551912568307,
+  "test_accuracy_after": 0.9453551912568307
+}
