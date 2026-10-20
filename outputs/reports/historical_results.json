@@ -1,0 +1,9 @@
+{
+  "_status": "HISTORICAL - supplied by the project author. Not re-measured in this archive: the checkpoint and test split were not available when this repository was prepared. Re-measure with `python -m src.evaluation.run_evaluation`.",
+  "model": "MobileNetV2 (fine-tuned)",
+  "test_accuracy": 0.9707,
+  "macro_precision": 0.9725,
+  "macro_recall": 0.9719,
+  "macro_f1": 0.9720,
+  "approx_parameters_millions": 2.23
+}

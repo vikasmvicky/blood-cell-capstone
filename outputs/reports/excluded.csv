@@ -1,0 +1,3 @@
+path,filename,class_name,extension,size_bytes,width,height,image_format,mode,readable,error,rel_path,class,sha256,duplicate_group,exclusion_reason
+D:\blood-cell-capstone\data\raw\PBC_dataset_normal_DIB\eosinophil\EO_225902.jpg,EO_225902.jpg,eosinophil,.jpg,15885,360,363,JPEG,RGB,True,,eosinophil/EO_225902.jpg,eosinophil,5c7c2002b0fec1f34093f672961aa13e3880fb5db0075e6a211d91f4e6ec68c7,1622,cross_class_duplicate_conflict
+D:\blood-cell-capstone\data\raw\PBC_dataset_normal_DIB\neutrophil\BNE_191112.jpg,BNE_191112.jpg,neutrophil,.jpg,15885,360,363,JPEG,RGB,True,,neutrophil/BNE_191112.jpg,neutrophil,5c7c2002b0fec1f34093f672961aa13e3880fb5db0075e6a211d91f4e6ec68c7,1622,cross_class_duplicate_conflict

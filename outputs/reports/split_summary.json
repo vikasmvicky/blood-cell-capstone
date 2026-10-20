@@ -1,0 +1,31 @@
+{
+    "created_at": "2026-10-18T22:16:30",
+    "random_seed": 123,
+    "split_ratios": {
+        "train": 0.7,
+        "val": 0.15,
+        "test": 0.15
+    },
+    "total_usable_images": 17090,
+    "total_excluded_images": 2,
+    "split_counts": {
+        "train": 11964,
+        "val": 2564,
+        "test": 2562
+    },
+    "split_percentages": {
+        "train": 70.01,
+        "val": 15.0,
+        "test": 14.99
+    },
+    "class_to_idx": {
+        "basophil": 0,
+        "eosinophil": 1,
+        "erythroblast": 2,
+        "ig": 3,
+        "lymphocyte": 4,
+        "monocyte": 5,
+        "neutrophil": 6,
+        "platelet": 7
+    }
+}

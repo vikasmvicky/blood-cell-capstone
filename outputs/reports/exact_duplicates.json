@@ -1,0 +1,74 @@
+{
+  "duplicate_groups": 17,
+  "duplicate_files": 34,
+  "groups": {
+    "3a3bf7577b78747be366c61a483f6356ab91399c912485fdab8abeadcdeeb221": [
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\basophil\\BA_20201.jpg",
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\basophil\\BA_809918.jpg"
+    ],
+    "58141dbb74b850defaa9ecba189025d6a6adc9c9e854f109c07838d57294b0ff": [
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\basophil\\BA_225540.jpg",
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\basophil\\BA_786369.jpg"
+    ],
+    "0b3577a928d351dedf7159cbf2ad9ed1e3d54367ea1e0af94b98a86c63be9c9d": [
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\basophil\\BA_251042.jpg",
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\basophil\\BA_988506.jpg"
+    ],
+    "0bba7588d03f7324d799e596705164f61160224b12ad06dd9b8255b8be676bc2": [
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\basophil\\BA_381452.jpg",
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\basophil\\BA_80990.jpg"
+    ],
+    "c19782b7871ca4d87d6c49cb4e2da56a4eecf078559f783feac1792ef95b2d88": [
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\basophil\\BA_435917.jpg",
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\basophil\\BA_858229.jpg"
+    ],
+    "4da73dd185d21a1f639d518347d2820b9817ed8f082376dde34ee7f295914391": [
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\basophil\\BA_546746.jpg",
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\basophil\\BA_685720.jpg"
+    ],
+    "945d3e4995b432e0c0ff0b4e68e208a565e9e8c21b85b64269b8064cef6eb569": [
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\eosinophil\\EO_220125.jpg",
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\eosinophil\\EO_433229.jpg"
+    ],
+    "5c7c2002b0fec1f34093f672961aa13e3880fb5db0075e6a211d91f4e6ec68c7": [
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\eosinophil\\EO_225902.jpg",
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\neutrophil\\BNE_191112.jpg"
+    ],
+    "75c8696041fd1db60f19a415b8b8565c6d79bbfd7a0917f0566b9db88082bc93": [
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\eosinophil\\EO_284748.jpg",
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\eosinophil\\EO_738445.jpg"
+    ],
+    "fa7fc9473f80875dba8b4433b55218633e8418fb30bd4040ec13a17ef543ce7c": [
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\eosinophil\\EO_621854.jpg",
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\eosinophil\\EO_728356.jpg"
+    ],
+    "fe32684b379b1590c0c3478da21ccb69edb24c002a33e43425b4647e50bdb8b8": [
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\eosinophil\\EO_65638.jpg",
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\eosinophil\\EO_873756.jpg"
+    ],
+    "a4cb122b4e4c3fcae35176616cb25710fcb1c488d4dcd80af609a12ce137f566": [
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\eosinophil\\EO_890163.jpg",
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\eosinophil\\EO_918881.jpg"
+    ],
+    "8476004690326eb5d0170943693c1e6d71ff0aa353f61f317d2ecae26dd72102": [
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\eosinophil\\EO_941266.jpg",
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\eosinophil\\EO_994040.jpg"
+    ],
+    "24f8d857cd904ec6df8755e82a7917085db0fcbf7565bcfadb3b69c6ea6187fb": [
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\ig\\PMY_187173.jpg",
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\ig\\PMY_225787.jpg"
+    ],
+    "dcfe04880be7fb3a48dcdb38f69e2d7e7092c03d4f740a4f7eef198cdbaad2b9": [
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\ig\\PMY_497134.jpg",
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\ig\\PMY_586364.jpg"
+    ],
+    "0991f6cb7e691e1839a30cb2f120fa58fd51dcbf7b2e0e4d19489dca1be35d8a": [
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\ig\\PMY_538541.jpg",
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\ig\\PMY_753076.jpg"
+    ],
+    "a6c80c6cf12692afdcde4e07e6822446c9d7371ae6127442c50c0954fb611cf0": [
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\monocyte\\MO_145357.jpg",
+      "D:\\blood-cell-capstone\\data\\raw\\PBC_dataset_normal_DIB\\monocyte\\MO_997225.jpg"
+    ]
+  }
+}
