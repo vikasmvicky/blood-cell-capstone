@@ -10,4 +10,10 @@ torch>=2.2
 torchvision>=0.17
 streamlit>=1.40
 tqdm>=4.66
+# Detection (YOLO11) + web API
+ultralytics>=8.3.0
+opencv-python-headless>=4.9
+fastapi>=0.110
+python-multipart>=0.0.9
+uvicorn>=0.27
 # seaborn and jupyter were listed originally; the notebooks/plots in this repo no longer need them.
