@@ -1,0 +1,31 @@
+tile,class_name,filename,split,complete_cell,edge_cropped,multiple_objects,artifacts_or_ambiguous_boundary,boxable,notes
+1,basophil,BA_100102.jpg,val,yes,no,yes,"two small dark-purple platelet-like objects left of center; RBCs throughout",yes,dominant cell fully surrounded by background
+2,basophil,BA_405748.jpg,train,yes,no,yes,"small dark dot upper-left; granule fringe slightly fuzzy",yes,well-centered
+3,basophil,BA_698070.jpg,train,yes,no,yes,"loose granules at periphery make edge mildly fuzzy",yes,box edge needs convention for granule fringe
+4,basophil,BA_999747.jpg,train,yes,no,yes,none,yes,clean
+5,eosinophil,EO_100213.jpg,test,yes,no,yes,none,yes,bilobed nucleus clear
+6,eosinophil,EO_405046.jpg,train,no,yes,yes,"right lobe/nucleus cut at right edge; pink granules low contrast vs pink RBCs in places",yes,needs truncated-box rule
+7,eosinophil,EO_697135.jpg,train,yes,no,yes,RBC touches lower border,yes,boundary mostly clear
+8,eosinophil,EO_999716.jpg,train,yes,no,yes,none,yes,clean
+9,erythroblast,ERB_101031.jpg,test,yes,no,yes,none,yes,small cell (~90 px)
+10,erythroblast,ERB_404854.jpg,train,yes,no,yes,none,yes,clean
+11,erythroblast,ERB_70123.jpg,train,yes,no,yes,"pale cytoplasm rim faint vs background; small dot lower-left",yes,mild outer-boundary ambiguity
+12,erythroblast,ERB_999467.jpg,val,yes,no,yes,"ghost cell at right",yes,clean
+13,ig,IG_101958.jpg,train,yes,no,yes,"gray background zone lower-left (stain/thickness gradient)",yes,cell boundary still visible
+14,ig,MMY_813028.jpg,test,yes,no,yes,none,yes,myelocyte subtype prefix MMY collapsed into ig class
+15,ig,MY_723155.jpg,train,yes,no,yes,none,yes,metamyelocyte prefix MY
+16,ig,PMY_996725.jpg,train,yes,no,yes,cytoplasm edge slightly fuzzy vs adjacent RBCs,yes,promyelocyte prefix PMY
+17,lymphocyte,LY_100275.jpg,train,yes,no,yes,platelet attached to upper-right border,yes,judgment needed at attached-object contact
+18,lymphocyte,LY_409311.jpg,train,yes,no,yes,"ragged/smudged cell border; two purple dots upper-left",yes,ambiguous edge (smudge-like)
+19,lymphocyte,LY_714950.jpg,train,yes,no,yes,two platelet-like dots below cell,yes,ragged but discernible
+20,lymphocyte,LY_999045.jpg,train,yes,no,yes,slightly ragged border,yes,clean enough
+21,monocyte,MO_100695.jpg,train,yes,ambiguous,yes,"irregular elongated shape; cytoplasm approaches/touches bottom edge; vacuoles",yes,verify edge status at annotate time
+22,monocyte,MO_389525.jpg,train,yes,no,yes,"very fuzzy spread cytoplasm (smudge-like); low boundary contrast",yes,high annotator-ambiguity risk
+23,monocyte,MO_699279.jpg,train,yes,no,yes,"RBC overlaps lower-left border; vacuoles; pale cytoplasm vs RBC",yes,moderate ambiguity
+24,monocyte,MO_999317.jpg,train,yes,no,yes,moderately clear boundary,yes,cleaner monocyte
+25,neutrophil,BNE_100878.jpg,test,yes,no,yes,small dark rod upper-left,yes,band neutrophil prefix BNE
+26,neutrophil,NEUTROPHIL_615770.jpg,test,yes,no,yes,paler staining but boundary still clear,yes,prefix NEUTROPHIL
+27,neutrophil,SNE_999519.jpg,train,yes,no,yes,several small purple dots near right edge,yes,segmented neutrophil prefix SNE
+28,platelet,PLATELET_100161.jpg,train,yes,no,yes,tiny object (~40 px); dark and distinct,yes,small-box policy needed
+29,platelet,PLATELET_532560.jpg,train,yes,no,yes,"second small purple object top-right (extra platelet instance)",yes,annotate all platelet instances or define policy
+30,platelet,PLATELET_999931.jpg,train,yes,no,yes,faint background streaks,yes,small-box policy needed
